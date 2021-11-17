@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+    color: #f1f1f1;
+    
+}
+
+hr{
+  border: 0;
+  border-top: 1px dashed #CCC;
+  border-bottom: 2px solid #CCC;
+  height: 3px;
+  margin-bottom: 25px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+
+  }
+
+.header{
+    background: url('../img/banner.gif');
+    background-attachment: fixed;
+    background-size: 30% 100%;
+
+    padding: 0 0 200px;
+    
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    color: #f1f1f1;
+  }
+
+li{
+    margin: 0 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    overflow: hidden;
+    color: #f1f1f1;
+}
+
+.menu-ico{
+  display: none;
+}
+
+nav a img{
+  width: 50%;
+  color: #f1f1f1;
+}
+  
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .profile img{
+    margin: 80px 0 15px 0;
+    width: 100%;
+    overflow: hidden;
+    max-width: 200px;
+    border: 3px solid #c5c0c0;
+    border-radius: 50%;
+  }
+  .profile p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 1rem;
+    padding: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .profile h1{
+    font-weight: bolder;
+    color: #f1f1f1;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.8rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+  }
+
+.sobre{
+  background: #1F2233;
+  width: 100%;
+  height: 100%;
+  padding:80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-card{
+  display: flex;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.img-card img{
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 300px;
+  box-shadow: 5px 10px 8px #000000;
+  border-radius: 30px 0 30px 0;
+  overflow: hidden;
+}
+
+.img-card h2{
+  display: flex;
+  flex-direction: column;
+  color: #f1f1f1;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: bolder;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 0 0 20px;
+}
+
+.img-card p{
+  text-align: justify;
+  min-width: 250px;
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.img-card table{
+  border: 3px solid #4C3E51;
+}
+
+.img-card table td{
+  color: #f1f1f1;
+  font-size: .8rem;
+  padding: 15px;
+}
+
+
+.img-card-container{
+  width: 100%;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .sobre{
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile p{
+    width: 100%;
+  }
+   .logo{
+    display: none;
+    }
+
+    .menu-ico{
+      width: 100%;
+      background: #1E1E1E;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      z-index: 2500;
+    }
+    
+    .menu-ico img{
+      min-width: 30px;
+      min-height: 30px;
+      max-width: 50px;
+      max-height: 50px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .menu{
+      display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  
+  
+  .img-card h2{
+    text-align: center;
+  }
+
+  .img-card{
+    max-width: 500px;
+  }
+  .header{
+    background: url('../img/banner.gif') 100% 80%;
+    background-attachment: fixed;
+  }
+
+
+  .img-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .bt{
+    margin: 0 auto;
+  }
+  .img-card img{
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .img-card-container{
+    padding: 0;
+    margin: 0 auto;
+  }
+
+}
+
+.bt{
+  background: #FC5C53;
+  padding: 10px;
+  font-size: .8rem;
+  width: 115px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px #000000;
+  cursor: pointer;
+}
+
+.bt:hover{
+  background: chocolate;
+}
+
+.bt-container{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 53%;
+}
+
+.skills{
+  background: #25273E;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 80px;
+}
+
+.skill-title{
+  justify-content: center;
+  padding: 30px;
+  display: flex;
+  color: #f1f1f1;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: bolder;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 1.8rem;
+}
+
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.skills-itens{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin: 20px;
+  max-width: 300px;
+
+}
+
+.skills-itens h2{
+  font-size: .9rem;
+  color: #f1f1f1;
+}
+
+
+.skills-itens img{
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.skills-text{
+  margin-top: 20px;
+  font-size: .9rem;
+  color: #f1f1f1;
+  width: 250px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.contato{
+  display: flex;
+  width: 100%;
+  height: 70%;
+  background: #1E1E1E;
+  line-height: 1;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+
+.container-contact{
+  width: 100%;
+  max-width: 550px;
+  min-width: 300px;
+  height: 100%;
+  max-height: 450px;
+  margin-bottom: 100px;
+  padding: 30px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+.container-contact h2{
+  width: 100%;
+  height: 100%;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.text-contact{
+  display: flex;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  width: 100%;
+  max-width: 430px;
+  text-align: justify;
+  font-size: 1rem;
+  
+}
+
+.dados_contato{
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 250px;
+  height: 500px;
+  background: #323233;
+  font-weight: 300px;
+  font-size: 2rem;
+  padding: 50px;
+  border-radius:  80px 0;
+  margin: auto;
+  box-shadow: 5px 10px 8px #000000;
+  transform: rotate(-8deg);
+}
+
+.dados_contato p{
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-meio{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+
+  .contato{
+    width: 100%;
+    height: 100%; 
+    margin: 0 auto;
+    padding: 30px;
+    overflow: auto;
+  }
+  .container-contact h2{
+    margin: 0 auto;
+  }
+
+  .dados_contato{
+    margin-top: 80px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+}
